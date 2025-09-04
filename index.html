@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local E-Commerce Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🛒 Local Store</h1>
+    <button onclick="toggleCart()">Cart (<span id="cartCount">0</span>)</button>
+  </header>
+
+  <main>
+    <h2>Products</h2>
+    <div id="productList" class="products"></div>
+  </main>
+
+  <aside id="cartSection" class="hidden">
+    <h2>Your Cart</h2>
+    <ul id="cartItems"></ul>
+    <p><b>Total: ₹<span id="totalPrice">0</span></b></p>
+    <button onclick="checkout()">Checkout</button>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
